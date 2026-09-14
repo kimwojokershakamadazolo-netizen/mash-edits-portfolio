@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mash Edits - Photography & Videography Studio | Kenya</title>
+    <meta name="description" content="Professional photography and videography services in Nyeri, Kenya. Weddings, events, drone coverage, product shoots, and livestreaming nationwide.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-text">MASH EDITS</span>
+                <span class="logo-subtitle">Studio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Book Now</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('assets/images/hero-1.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('assets/images/hero-2.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('assets/images/hero-3.jpg')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">MASH EDITS</h1>
+                <p class="hero-tagline">Capturing Kenya's Moments, One Frame at a Time</p>
+                <a href="#contact" class="cta-large">Start Your Project</a>
+            </div>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive visual solutions for every occasion</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Photography</h3>
+                    <p>Professional still photography for weddings, events, corporate functions, and commercial projects with premium editing.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Videography</h3>
+                    <p>Cinematic video production with professional color grading, storytelling, and high-quality delivery in 4K and beyond.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-drone"></i>
+                    </div>
+                    <h3>Drone/Aerial Coverage</h3>
+                    <p>Stunning aerial perspectives using latest drone technology for events, real estate, and promotional content.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Event Coverage</h3>
+                    <p>Full-day event documentation including weddings, corporate events, conferences, and special occasions with multi-camera setups.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3>Product Photography</h3>
+                    <p>High-quality product photography for e-commerce, catalogs, and marketing materials with professional lighting and styling.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <h3>Livestreaming</h3>
+                    <p>Professional live streaming for events, conferences, and online broadcasts with multi-camera switching and graphics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Our Portfolio</h2>
+            <p class="section-subtitle">Explore our latest work across various categories</p>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="weddings">Weddings</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="drone">Drone</button>
+                <button class="filter-btn" data-filter="products">Products</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+                <button class="filter-btn" data-filter="portraits">Portraits</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Wedding Projects -->
+                <div class="portfolio-item" data-category="weddings">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-1.jpg" alt="Wedding Photography">
+                        <div class="portfolio-overlay">
+                            <h3>Traditional Wedding Ceremony</h3>
+                            <p>Nairobi | 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="weddings">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-2.jpg" alt="Wedding Video">
+                        <div class="portfolio-overlay">
+                            <h3>Wedding Highlight Reel</h3>
+                            <p>Kericho | 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Projects -->
+                <div class="portfolio-item" data-category="events">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-3.jpg" alt="Corporate Event">
+                        <div class="portfolio-overlay">
+                            <h3>Corporate Gala Evening</h3>
+                            <p>Nairobi | 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="events">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-4.jpg" alt="Music Festival">
+                        <div class="portfolio-overlay">
+                            <h3>Music Festival Coverage</h3>
+                            <p>Nairobi | 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drone Projects -->
+                <div class="portfolio-item" data-category="drone">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-5.jpg" alt="Aerial Landscape">
+                        <div class="portfolio-overlay">
+                            <h3>Aerial Landscape Shot</h3>
+                            <p>Rift Valley | 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="drone">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-6.jpg" alt="Drone Real Estate">
+                        <div class="portfolio-overlay">
+                            <h3>Real Estate Drone Tour</h3>
+                            <p>Kiambu | 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Projects -->
+                <div class="portfolio-item" data-category="products">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-7.jpg" alt="Product Shoot">
+                        <div class="portfolio-overlay">
+                            <h3>Fashion Product Shoot</h3>
+                            <p>Studio | 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="products">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-8.jpg" alt="E-commerce Products">
+                        <div class="portfolio-overlay">
+                            <h3>E-commerce Collection</h3>
+                            <p>Studio | 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corporate Projects -->
+                <div class="portfolio-item" data-category="corporate">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-9.jpg" alt="Corporate Video">
+                        <div class="portfolio-overlay">
+                            <h3>Corporate Brand Video</h3>
+                            <p>Nairobi | 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portrait Projects -->
+                <div class="portfolio-item" data-category="portraits">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-10.jpg" alt="Portrait Session">
+                        <div class="portfolio-overlay">
+                            <h3>Professional Headshots</h3>
+                            <p>Nyeri | 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Mash Edits</h2>
+                    <p>Based in Nyeri, Kenya, Mash Edits is a premier photography and videography studio dedicated to capturing life's most precious moments with cinematic excellence and artistic vision.</p>
+                    
+                    <p>With years of experience serving clients across Kenya—from intimate ceremonies to large-scale corporate events—we combine technical expertise with creative storytelling to deliver exceptional visual content that exceeds expectations.</p>
+
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>Nationwide</h3>
+                            <p>Coverage Available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/about-team.jpg" alt="Mash Edits Team">
+                </div>
+            </div>
+
+            <div class="equipment-section">
+                <h3>Professional Equipment</h3>
+                <div class="equipment-grid">
+                    <div class="equipment-item">
+                        <i class="fas fa-camera"></i>
+                        <h4>Professional Cameras</h4>
+                        <p>Canon & Nikon DSLR & Mirrorless</p>
+                    </div>
+                    <div class="equipment-item">
+                        <i class="fas fa-drone"></i>
+                        <h4>Drone Fleet</h4>
+                        <p>DJI Phantom & Air Series</p>
+                    </div>
+                    <div class="equipment-item">
+                        <i class="fas fa-microphone"></i>
+                        <h4>Audio Equipment</h4>
+                        <p>Professional Lavalier & Studio Mics</p>
+                    </div>
+                    <div class="equipment-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Lighting Rigs</h4>
+                        <p>LED & Professional Studio Lighting</p>
+                    </div>
+                    <div class="equipment-item">
+                        <i class="fas fa-server"></i>
+                        <h4>Streaming Setup</h4>
+                        <p>Multi-camera & Live Graphics System</p>
+                    </div>
+                    <div class="equipment-item">
+                        <i class="fas fa-edit"></i>
+                        <h4>Editing Suite</h4>
+                        <p>4K Post-Production Workstations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <p class="section-subtitle">What our clients say about working with us</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Mash Edits captured our wedding day beautifully. Their attention to detail and professionalism made us feel completely at ease. The final video was absolutely stunning!"</p>
+                    <div class="testimonial-author">
+                        <h4>Sarah & James Kipchoge</h4>
+                        <p>Wedding | Nairobi, 2024</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"We hired Mash Edits for our corporate event livestream. Their technical expertise and creative approach made our event look incredible. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <h4>David Mwangi</h4>
+                        <p>Corporate Event | Kigali, 2024</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The drone photography for our real estate project was exceptional. The quality and turnaround time exceeded our expectations. They're true professionals!"</p>
+                    <div class="testimonial-author">
+                        <h4>Kenya Property Developers</h4>
+                        <p>Real Estate | Kiambu, 2024</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Product photography from Mash Edits transformed our online store. Sales increased noticeably after switching to their professional images. Worth every penny!"</p>
+                    <div class="testimonial-author">
+                        <h4>Grace Ochieng</h4>
+                        <p>E-commerce | Nairobi, 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Area Section -->
+    <section id="coverage" class="coverage">
+        <div class="container">
+            <h2 class="section-title">Coverage Area</h2>
+            <div class="coverage-content">
+                <div class="coverage-map">
+                    <i class="fas fa-map"></i>
+                    <p>Based in Nyeri, Kenya</p>
+                </div>
+                <div class="coverage-text">
+                    <h3>Available Nationwide</h3>
+                    <p>While we're proudly based in Nyeri, our services extend across all of Kenya and neighboring East African regions. Whether you're in Nairobi, Mombasa, Kisumu, or anywhere in between, we're ready to travel and deliver exceptional results.</p>
+                    <ul class="coverage-list">
+                        <li><i class="fas fa-check"></i> Local Nyeri Coverage</li>
+                        <li><i class="fas fa-check"></i> Nationwide Kenya Travel</li>
+                        <li><i class="fas fa-check"></i> East Africa Available</li>
+                        <li><i class="fas fa-check"></i> Flexible Travel Packages</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-subtitle">Get in touch and let's create something amazing</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Nyeri, Kenya</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+254712345678">+254 (0) 712 345 678</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:hello@mashedits.co.ke">hello@mashedits.co.ke</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/254712345678" target="_blank">Chat with us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select Service</option>
+                            <option value="photography">Photography</option>
+                            <option value="videography">Videography</option>
+                            <option value="drone">Drone Coverage</option>
+                            <option value="event">Event Coverage</option>
+                            <option value="product">Product Photography</option>
+                            <option value="livestream">Livestreaming</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Project Details" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MASH EDITS</h4>
+                    <p>Professional photography and videography studio capturing Kenya's moments with cinematic excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Photography</a></li>
+                        <li><a href="#services">Videography</a></li>
+                        <li><a href="#services">Drone Coverage</a></li>
+                        <li><a href="#services">Livestreaming</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/mashedits" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/mashedits" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://tiktok.com/@mashedits" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://youtube.com/@mashedits" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mash Edits. All rights reserved. | Proudly based in Nyeri, Kenya</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
